@@ -14,7 +14,7 @@ CHANNEL = os.environ.get('CHANNEL',"")
 import datetime
 from datetime import date as date_
 STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
+log_channel = int(os.environ.get("LOG_CHANNEL","-1002229216652"))
 token = os.environ.get('TOKEN','')
 botid = token.split(':')[0]
 
@@ -37,14 +37,14 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""{message.from_user.mention},\n{wish}\nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.\n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!""",reply_to_message_id = message.id ,  
-	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚚     ɱᴀɪɴ   ᴄʜᴀɴɴᴇʟ     ⚚', url='https://telegram.me/RahulReviews')],[InlineKeyboardButton('👨‍💻   ᴏᴡɴᴇʀ', url='https://telegram.me/CodeXBro'),InlineKeyboardButton('📝   ᴀʙᴏᴜᴛ', callback_data = "upgrade")]]))
+	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚚     ɱᴀɪɴ   ᴄʜᴀɴɴᴇʟ     ⚚', url='https://telegram.me/OrzzQueryBot')],[InlineKeyboardButton('👨‍💻   ᴏᴡɴᴇʀ', url='https://telegram.me/mawhOrzzBackUp2'),InlineKeyboardButton('📝   ᴀʙᴏᴜᴛ', callback_data = "upgrade")]]))
 	    return
 	if id:
 	    if old == True:
 	        try:
 	            await client.send_message(id,"ʏᴏᴜʀ  ꜰʀɪᴇɴᴅ  ᴀʟʀᴇᴀᴅʏ  ᴜꜱɪɴɢ  ᴍᴇ")
 	            await message.reply_text(text =f"""{message.from_user.mention},\n{wish}\nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.\n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!""",reply_to_message_id = message.id ,  
-	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚚     ɱᴀɪɴ   ᴄʜᴀɴɴᴇʟ     ⚚', url='https://telegram.me/RahulReviews')],[InlineKeyboardButton('👨‍💻   ᴏᴡɴᴇʀ', url='https://telegram.me/CodeXBro'),InlineKeyboardButton('📝   ᴀʙᴏᴜᴛ', callback_data = "upgrade")]]))
+	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚚     ɱᴀɪɴ   ᴄʜᴀɴɴᴇʟ     ⚚', url='https://telegram.me/OrzzQueryBot')],[InlineKeyboardButton('👨‍💻   ᴏᴡɴᴇʀ', url='https://telegram.me/mawhOrzzBackUp2'),InlineKeyboardButton('📝   ᴀʙᴏᴜᴛ', callback_data = "upgrade")]]))
 	        except:
 	             return
 	    else:
@@ -54,7 +54,7 @@ async def start(client,message):
 	         new_limit = limit + 104857600
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""{message.from_user.mention},\n{wish}\nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.\n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!""",reply_to_message_id = message.id ,  
-	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚚     ɱᴀɪɴ   ᴄʜᴀɴɴᴇʟ     ⚚', url='https://telegram.me/RahulReviews')],[InlineKeyboardButton('👨‍💻   ᴏᴡɴᴇʀ', url='https://telegram.me/CodeXBro'),InlineKeyboardButton('📝   ᴀʙᴏᴜᴛ', callback_data = "upgrade")]]))
+	reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚚     ɱᴀɪɴ   ᴄʜᴀɴɴᴇʟ     ⚚', url='https://telegram.me/OrzzQueryBot')],[InlineKeyboardButton('👨‍💻   ᴏᴡɴᴇʀ', url='https://telegram.me/mawhOrzzBackUp2'),InlineKeyboardButton('📝   ᴀʙᴏᴜᴛ', callback_data = "upgrade")]]))
 	         
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
