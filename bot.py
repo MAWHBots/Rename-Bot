@@ -1,6 +1,6 @@
 import pyrogram.utils
 
-pyrogram.utils.MIN_CHANNEL_ID = -1001921484915
+pyrogram.utils.MIN_CHANNEL_ID=-1001522888236
 import asyncio
 from pyrogram import Client, compose,idle
 import os
